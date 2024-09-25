@@ -1,9 +1,11 @@
 {
   "name": "jquery-sticky-header-relative",
   "version": "1.0.0",
-  "description": "jquery plugin",
-  "main": "index.js",
+  "description": "A jquery plugin to make something sticky, relative to their parent.",
+  "main": "js/jquery.stickyheadersrelative.js",
+  "unpkg": "dist/jquery.stickyheadersrelative.min.js",
   "scripts": {
+    "build": "uglifyjs js/jquery.stickyheadersrelative.js -o dist/jquery.stickyheadersrelative.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,12 +13,22 @@
     "url": "git+https://github.com/ssv445/jquery-sticky-header-relative.git"
   },
   "keywords": [
+    "jquery",
+    "sticky",
+    "table",
+    "headers",
     "jquery-plugin",
     "ecosystem:jquery"
   ],
-  "author": "shyam verma",
+  "author": {
+    "name": "Shyam Verma",
+    "url": "https://github.com/ssv445"
+  },
   "bugs": {
     "url": "https://github.com/ssv445/jquery-sticky-header-relative/issues"
   },
-  "homepage": "https://github.com/ssv445/jquery-sticky-header-relative#readme"
+  "homepage": "https://github.com/ssv445/jquery-sticky-header-relative#readme",
+  "dependencies": {
+    "uglify-js": "^3.19.3"
+  }
 }
