@@ -1,4 +1,16 @@
-# jQuery Sticky Header Relative
+# Context
+The inbuilt css sticky property ```position:sticky;``` does not work in all situations.
+I tried many jquery plugins abd css, to apply the same effect for my project, but none of them worked in a very simple layout.
+- All of the project solves by pusing header to fixed position.
+- It breaks the content flow,
+- Any changes to parent container must be applied/handled to this fixed header (like horizontal scrolling, which is very common)
+
+Therefore I decided to write a custom plugin
+- It use ```position:realative``` property on header 
+- When window is scrolled, we observe the parent container, and  update the top property, as desired for sticky header.
+- Its a short and simple.
+
+# Relative Sticky Header (jQuery Plugin)
 
 A jQuery plugin that makes elements sticky relative to their parent container. This is particularly useful for creating sticky table headers that remain within their parent table's boundaries.
 
