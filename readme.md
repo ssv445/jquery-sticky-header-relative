@@ -12,28 +12,29 @@ A jQuery plugin that makes elements sticky relative to their parent container. T
 ## Installation
 
 You can install this plugin using npm:
-bash
+```bash
 npm install jquery-sticky-header-relative
+```
 
 Alternatively, you can include it directly in your HTML file:
 
-html
+```html
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="path/to/jquery.stickyheadersrelative.min.js"></script>
-
+```
 ## Usage
 
 1. Include jQuery and the plugin in your HTML file.
 2. Call the `stickyHeadersRelative` method on the parent container, passing the selector for the element you want to make sticky.
 
 Basic usage:
-javascript
+```javascript
 $(document).ready(function () {
 $('table.sticky-header-table').stickyHeadersRelative('thead');
 });
-
+```
 With custom options:
-javascript
+```javascript
 $(document).ready(function () {
 $('table.sticky-header-table').stickyHeadersRelative('thead', {
 backgroundColor: '#f0f0f0',
@@ -43,6 +44,7 @@ boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
 }
 });
 });
+```
 
 ## Options
 
