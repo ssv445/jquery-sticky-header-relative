@@ -1,14 +1,14 @@
 # Context
-The inbuilt css sticky property ```position:sticky;``` does not work in all situations.
-I tried many jquery plugins abd css, to apply the same effect for my project, but none of them worked in a very simple layout.
-- All of the project solves by pusing header to fixed position.
+The inbuilt CSS sticky property ```position:sticky;``` does not work in all situations.
+I tried many jQuery plugins and CSS, to apply the same effect for my project, but none worked in a straightforward layout.
+- All projects are solved by pushing the header to the fixed position.
 - It breaks the content flow,
-- Any changes to parent container must be applied/handled to this fixed header (like horizontal scrolling, which is very common)
+- Any changes to the parent container must be applied/handled to this fixed header (like horizontal scrolling, which is very common)
 
 Therefore I decided to write a custom plugin
-- It use ```position:realative``` property on header 
-- When window is scrolled, we observe the parent container, and  update the top property, as desired for sticky header.
-- Its a short and simple.
+- It use ```position:relative`` property on header 
+- When the window is scrolled, we observe the parent container, and  update the top property, as desired for the sticky header.
+- It's short and simple.
 
 # Relative Sticky Header (jQuery Plugin)
 
