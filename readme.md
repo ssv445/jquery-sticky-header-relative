@@ -6,7 +6,7 @@ I tried many jQuery plugins and CSS, to apply the same effect for my project, bu
 - Any changes to the parent container must be applied/handled to this fixed header (like horizontal scrolling, which is very common)
 
 Therefore I decided to write a custom plugin
-- It use ```position:relative`` property on header 
+- It use ```position:relative``` property on header 
 - When the window is scrolled, we observe the parent container, and  update the top property, as desired for the sticky header.
 - It's short and simple.
 
