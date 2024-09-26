@@ -42,19 +42,19 @@ Alternatively, you can include it directly in your HTML file:
 Basic usage:
 ```javascript
 $(document).ready(function () {
-$('table.sticky-header-table').stickyHeadersRelative('thead');
+    $('table.sticky-header-table').stickyHeadersRelative('thead');
 });
 ```
 With custom options:
 ```javascript
 $(document).ready(function () {
-$('table.sticky-header-table').stickyHeadersRelative('thead', {
-backgroundColor: '#f0f0f0',
-zIndex: 100,
-additionalStyles: {
-boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-}
-});
+    $('table.sticky-header-table').stickyHeadersRelative('thead', {
+        backgroundColor: '#f0f0f0',
+        zIndex: 100,
+        additionalStyles: {
+            boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+        }
+    });
 });
 ```
 
